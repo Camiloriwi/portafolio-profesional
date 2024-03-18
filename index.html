@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema notas</title>
+</head>
+<body style="background-color: black;">
+
+    <h1 style="color: blue;display: flex;justify-content: center;">sistem notes</h1>
+    <div class="formulario" style="color: blueviolet;">
+        <form action="http://localhost:3000/api/all/notes/user" method="POST" style="display: flex;flex-direction: column;justify-content: center;align-items: center;color: blueviolet;">
+
+            <label for="name">Nombre</label>
+            <input type="text" required>
+            <br>
+            <label for="user">usuario</label>
+            <input type="number" id="user" required>
+            <br>
+            <label for="notes">nota 1</label>
+            <input type="decimal" id="nota" required>
+            <br>
+            <label for="notes">nota 2</label>
+            <input type="decimal" id="asunto"  required>
+            <br>
+            
+            <!-- <button type="submit">Enviar</button> -->
+            <button type="submit" style="background: linear-gradient(blue,purple,rgb(213, 30, 61));border-radius: 3px;">
+                enviar registros
+            </button>
+        </form>
+    </div>
+</body>
+</html>
